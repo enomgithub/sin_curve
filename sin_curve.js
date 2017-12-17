@@ -12,7 +12,7 @@ if (typeof Uint16Array === 'undefined') Uint16Array = Array;
 if (typeof Uint32Array === 'undefined') Uint32Array = Array;
 if (typeof Float32Array === 'undefined') Float32Array = Array;
 if (typeof Float64Array === 'undefined') Float64Array = Array;
-var NTI52244 = {size: 0,kind: 16,base: null,node: null,finalizer: null};
+var NTI44244 = {size: 0,kind: 16,base: null,node: null,finalizer: null};
 var NTI138 = {size: 0,kind: 28,base: null,node: null,finalizer: null};
 var NTI25385 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
 var NTI25381 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
@@ -242,7 +242,7 @@ NTI25204.base = NTI3408;
 NTI25222.base = NTI25204;
 NTI25230.base = NTI25222;
 NTI25228.base = NTI25230;
-NTI52244.base = NTI25228;
+NTI44244.base = NTI25228;
 
 function arrayConstr(len_20264, value_20265, typ_20266) {
 		      var result = new Array(len_20264);
@@ -441,57 +441,6 @@ var nim_program_result = 0;
 var globalRaiseHook_11605 = [null];
 var localRaiseHook_11610 = [null];
 var outOfMemHook_11613 = [null];
-var state_45605 = [{a0: 1773455756, a1: 4275166512}];
-
-function getTime_48042() {
-	var result_50413 = 0.0;
-
-	BeforeRet: do {
-		result_50413 = new Date();
-		break BeforeRet;
-	} while (false);
-
-	return result_50413;
-
-}
-var startMilsecs_50512 = [getTime_48042()];
-
-function rotl_45802(x_45804, k_45805) {
-	var result_45806 = 0;
-
-		result_45806 = ((x_45804 << k_45805) | ((x_45804 >>> 0) >>> ((64 - k_45805) >>> 0)));
-
-	return result_45806;
-
-}
-
-function next_45842(s_45845) {
-	var result_45846 = 0;
-
-		var s0_45847 = s_45845.a0;
-		var s1_45848 = s_45845.a1;
-		result_45846 = ((s0_45847 + s1_45848) >>> 0);
-		s1_45848 = (s1_45848 ^ s0_45847);
-		s_45845.a0 = ((rotl_45802(s0_45847, 55) ^ s1_45848) ^ (s1_45848 << 14));
-		s_45845.a1 = rotl_45802(s1_45848, 36);
-
-	return result_45846;
-
-}
-
-function randomize_46434(seed_46436) {
-		state_45605[0].a0 = ((seed_46436 ) >>> 16);
-		state_45605[0].a1 = (seed_46436 & 65535);
-		next_45842(state_45605[0]);
-
-	
-}
-
-function randomize_51001() {
-		randomize_46434(getTime_48042().getTime());
-
-	
-}
 
 function isFatPointer_19801(ti_19803) {
 	var result_19804 = false;
@@ -541,12 +490,12 @@ function nimCopyAux(dest_19822, src_19823, n_19825) {
 	
 }
 
-function degToRad_52416(d_52420) {
-	var result_52421 = 0.0;
+function degToRad_44416(d_44420) {
+	var result_44421 = 0.0;
 
-		result_52421 = (d_52420 * 1.7453292519943295e-002);
+		result_44421 = (d_44420 * 1.7453292519943295e-002);
 
-	return result_52421;
+	return result_44421;
 
 }
 
@@ -577,68 +526,68 @@ function nsuIntToStr(x_38644, minchars_38645) {
 
 }
 
-function init_52234() {
-	var result_52238 = arrayConstr(360, null, NTI25228);
+function init_44234() {
+	var result_44238 = arrayConstr(360, null, NTI25228);
 
 	BeforeRet: do {
-		var bars_52245 = arrayConstr(360, null, NTI25228);
+		var bars_44245 = arrayConstr(360, null, NTI25228);
 		L1: do {
-			var i_52414 = 0;
-			var res_52430 = 0;
+			var i_44414 = 0;
+			var res_44430 = 0;
 			L2: do {
 					L3: while (true) {
-					if (!(res_52430 <= 359)) break L3;
-						i_52414 = res_52430;
-						var width_52423 = Math.floor(((1.0000000000000000e+002 * Math.sin(degToRad_52416(i_52414))) + 1.0000000000000000e+002));
-						bars_52245[i_52414] = document.createElement("div");
-						bars_52245[i_52414].style.height = toJSStr((nsuIntToStr(1, 1).slice(0,-1)).concat(makeNimstrLit("px")));
-						bars_52245[i_52414].style.width = toJSStr((nsuIntToStr(width_52423, 1).slice(0,-1)).concat(makeNimstrLit("px")));
-						bars_52245[i_52414].style.backgroundColor = "#302833";
-						document.getElementById("sin-curve").appendChild(bars_52245[i_52414]);
-						res_52430 += 1;
+					if (!(res_44430 <= 359)) break L3;
+						i_44414 = res_44430;
+						var width_44423 = Math.floor(((1.0000000000000000e+002 * Math.sin(degToRad_44416(i_44414))) + 1.0000000000000000e+002));
+						bars_44245[i_44414] = document.createElement("div");
+						bars_44245[i_44414].style.height = toJSStr((nsuIntToStr(1, 1).slice(0,-1)).concat(makeNimstrLit("px")));
+						bars_44245[i_44414].style.width = toJSStr((nsuIntToStr(width_44423, 1).slice(0,-1)).concat(makeNimstrLit("px")));
+						bars_44245[i_44414].style.backgroundColor = "#302833";
+						document.getElementById("sin-curve").appendChild(bars_44245[i_44414]);
+						res_44430 += 1;
 					}
 			} while(false);
 		} while(false);
-		nimCopy(result_52238, bars_52245, NTI52244);
+		nimCopy(result_44238, bars_44245, NTI44244);
 		break BeforeRet;
 	} while (false);
 
-	return result_52238;
+	return result_44238;
 
 }
 
-function run_52005(bars_52009) {
-		var firstWidth_52019 = bars_52009[0].style.width;
+function run_44005(bars_44009) {
+		var firstWidth_44019 = bars_44009[0].style.width;
 		L1: do {
-			var i_52215 = 0;
-			var res_52229 = 0;
+			var i_44215 = 0;
+			var res_44229 = 0;
 			L2: do {
 					L3: while (true) {
-					if (!(res_52229 <= 358)) break L3;
-						i_52215 = res_52229;
-						bars_52009[i_52215].style.width = bars_52009[(i_52215 + 1)].style.width;
-						res_52229 += 1;
+					if (!(res_44229 <= 358)) break L3;
+						i_44215 = res_44229;
+						bars_44009[i_44215].style.width = bars_44009[(i_44215 + 1)].style.width;
+						res_44229 += 1;
 					}
 			} while(false);
 		} while(false);
-		bars_52009[359].style.width = firstWidth_52019;
+		bars_44009[359].style.width = firstWidth_44019;
 
 	
 }
 
-function stopTimer_52433(timer_52436) {
-		if (!((timer_52436 == null))) {
-		window.clearInterval(timer_52436);
+function stopTimer_44433(timer_44436) {
+		if (!((timer_44436 == null))) {
+		window.clearInterval(timer_44436);
 		}
 		
 
 	
 }
 
-function toggleKey_52448(keyCode_52450, timer_52452) {
-		switch (keyCode_52450) {
+function toggleKey_44448(keyCode_44450, timer_44452) {
+		switch (keyCode_44450) {
 		case 83:
-			stopTimer_52433(timer_52452);
+			stopTimer_44433(timer_44452);
 			break;
 		default: 
 			break;
@@ -647,25 +596,24 @@ function toggleKey_52448(keyCode_52450, timer_52452) {
 	
 }
 
-function main_52455() {
+function main_44455() {
 
-		function colonanonymous__52461() {
-				run_52005(bars_52459);
-
-			
-		}
-
-		function colonanonymous__52464(e_52466) {
-				toggleKey_52448(e_52466.keyCode, timer_52463);
+		function colonanonymous__44461() {
+				run_44005(bars_44459);
 
 			
 		}
 
-		randomize_51001();
-		var bars_52459 = init_52234();
-		var timer_52463 = window.setInterval(colonanonymous__52461, 16);
-		window.addEventListener("keydown", colonanonymous__52464, false);
+		function colonanonymous__44464(e_44466) {
+				toggleKey_44448(e_44466.keyCode, timer_44463);
+
+			
+		}
+
+		var bars_44459 = init_44234();
+		var timer_44463 = window.setInterval(colonanonymous__44461, 16);
+		window.addEventListener("keydown", colonanonymous__44464, false);
 
 	
 }
-main_52455();
+main_44455();

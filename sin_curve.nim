@@ -1,7 +1,6 @@
 import dom
-from math import sin, floor, degToRad
+from math import sin, degToRad
 from strutils import intToStr
-from random import random, randomize
 
 
 const nMin: int = 0
@@ -46,7 +45,6 @@ proc toggleKey(keyCode: int, timer: ref TInterval) =
 
 
 proc main() =
-  randomize()
   var bars: array[nMin..nMax, Element] = init()
   var timer: ref TInterval = setInterval(window,
                                          proc() = run(bars),
