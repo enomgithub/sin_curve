@@ -3,9 +3,6 @@ from math import sin, degToRad
 from strutils import intToStr
 
 
-const MS: int = 16
-
-
 proc run() =
   let
     bars: seq[Element] = document.getElementsByClassName("bar")
@@ -45,6 +42,7 @@ proc toggleKey(keyCode: int, timer: ref TInterval) =
 
 
 proc main() =
+  const MS: int = 16
   const N: int = 360
   init(N)
   var timer: ref TInterval = setInterval(window,

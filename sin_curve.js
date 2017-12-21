@@ -203,12 +203,12 @@ var globalRaiseHook_11605 = [null];
 var localRaiseHook_11610 = [null];
 var outOfMemHook_11613 = [null];
 
-function degToRad_44075(d_44079) {
-	var result_44080 = 0.0;
+function degToRad_44074(d_44078) {
+	var result_44079 = 0.0;
 
-		result_44080 = (d_44079 * 1.7453292519943295e-002);
+		result_44079 = (d_44078 * 1.7453292519943295e-002);
 
-	return result_44080;
+	return result_44079;
 
 }
 
@@ -287,24 +287,24 @@ function nsuIntToStr(x_38644, minchars_38645) {
 
 }
 
-function init_44057(n_44059) {
+function init_44056(n_44058) {
 		L1: do {
-			var i_44073 = 0;
-			var colontmp__44087 = 0;
-			colontmp__44087 = (n_44059 - 1);
-			var res_44090 = 0;
+			var i_44072 = 0;
+			var colontmp__44086 = 0;
+			colontmp__44086 = (n_44058 - 1);
+			var res_44089 = 0;
 			L2: do {
 					L3: while (true) {
-					if (!(res_44090 <= colontmp__44087)) break L3;
-						i_44073 = res_44090;
-						var width_44082 = Math.floor(((1.0000000000000000e+002 * Math.sin(degToRad_44075(i_44073))) + 1.0000000000000000e+002));
-						var bar_44083 = document.createElement("div");
-						bar_44083.classList.add("bar");
-						bar_44083.style.height = toJSStr((nsuIntToStr(1, 1).slice(0,-1)).concat(makeNimstrLit("px")));
-						bar_44083.style.width = toJSStr((nsuIntToStr(width_44082, 1).slice(0,-1)).concat(makeNimstrLit("px")));
-						bar_44083.style.backgroundColor = "#302833";
-						document.getElementById("sin-curve").appendChild(bar_44083);
-						res_44090 += 1;
+					if (!(res_44089 <= colontmp__44086)) break L3;
+						i_44072 = res_44089;
+						var width_44081 = Math.floor(((1.0000000000000000e+002 * Math.sin(degToRad_44074(i_44072))) + 1.0000000000000000e+002));
+						var bar_44082 = document.createElement("div");
+						bar_44082.classList.add("bar");
+						bar_44082.style.height = toJSStr((nsuIntToStr(1, 1).slice(0,-1)).concat(makeNimstrLit("px")));
+						bar_44082.style.width = toJSStr((nsuIntToStr(width_44081, 1).slice(0,-1)).concat(makeNimstrLit("px")));
+						bar_44082.style.backgroundColor = "#302833";
+						document.getElementById("sin-curve").appendChild(bar_44082);
+						res_44089 += 1;
 					}
 			} while(false);
 		} while(false);
@@ -312,41 +312,41 @@ function init_44057(n_44059) {
 	
 }
 
-function run_44002() {
-		var bars_44005 = document.getElementsByClassName("bar");
-		var firstWidth_44013 = bars_44005[0].style.width;
+function run_44001() {
+		var bars_44004 = document.getElementsByClassName("bar");
+		var firstWidth_44012 = bars_44004[0].style.width;
 		L1: do {
-			var i_44038 = 0;
-			var colontmp__44050 = 0;
-			colontmp__44050 = ((bars_44005 != null ? (bars_44005.length-1) : -1) - 1);
-			var res_44053 = 0;
+			var i_44037 = 0;
+			var colontmp__44049 = 0;
+			colontmp__44049 = ((bars_44004 != null ? (bars_44004.length-1) : -1) - 1);
+			var res_44052 = 0;
 			L2: do {
 					L3: while (true) {
-					if (!(res_44053 <= colontmp__44050)) break L3;
-						i_44038 = res_44053;
-						bars_44005[i_44038].style.width = bars_44005[(i_44038 + 1)].style.width;
-						res_44053 += 1;
+					if (!(res_44052 <= colontmp__44049)) break L3;
+						i_44037 = res_44052;
+						bars_44004[i_44037].style.width = bars_44004[(i_44037 + 1)].style.width;
+						res_44052 += 1;
 					}
 			} while(false);
 		} while(false);
-		bars_44005[(bars_44005 != null ? (bars_44005.length-1) : -1)].style.width = firstWidth_44013;
+		bars_44004[(bars_44004 != null ? (bars_44004.length-1) : -1)].style.width = firstWidth_44012;
 
 	
 }
 
-function stopTimer_44094(timer_44097) {
-		if (!((timer_44097 == null))) {
-		window.clearInterval(timer_44097);
+function stopTimer_44093(timer_44096) {
+		if (!((timer_44096 == null))) {
+		window.clearInterval(timer_44096);
 		}
 		
 
 	
 }
 
-function toggleKey_44109(keyCode_44111, timer_44113) {
-		switch (keyCode_44111) {
+function toggleKey_44108(keyCode_44110, timer_44112) {
+		switch (keyCode_44110) {
 		case 83:
-			stopTimer_44094(timer_44113);
+			stopTimer_44093(timer_44112);
 			break;
 		default: 
 			break;
@@ -355,24 +355,24 @@ function toggleKey_44109(keyCode_44111, timer_44113) {
 	
 }
 
-function main_44116() {
+function main_44115() {
 
 		function colonanonymous__44121() {
-				run_44002();
+				run_44001();
 
 			
 		}
 
 		function colonanonymous__44124(e_44126) {
-				toggleKey_44109(e_44126.keyCode, timer_44123);
+				toggleKey_44108(e_44126.keyCode, timer_44123);
 
 			
 		}
 
-		init_44057(360);
+		init_44056(360);
 		var timer_44123 = window.setInterval(colonanonymous__44121, 16);
 		window.addEventListener("keydown", colonanonymous__44124, false);
 
 	
 }
-main_44116();
+main_44115();
