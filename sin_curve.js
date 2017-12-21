@@ -12,243 +12,44 @@ if (typeof Uint16Array === 'undefined') Uint16Array = Array;
 if (typeof Uint32Array === 'undefined') Uint32Array = Array;
 if (typeof Float32Array === 'undefined') Float32Array = Array;
 if (typeof Float64Array === 'undefined') Float64Array = Array;
-var NTI44244 = {size: 0,kind: 16,base: null,node: null,finalizer: null};
 var NTI138 = {size: 0,kind: 28,base: null,node: null,finalizer: null};
-var NTI25385 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI25381 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI25377 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI25373 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI25369 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI25365 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI25361 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI25357 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI25353 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI25349 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI25345 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI25341 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI25337 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI25333 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI25329 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI25325 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI25321 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI25317 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI25313 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI25309 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI25204 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI25260 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI25258 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI25218 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
-var NTI25434 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI25432 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI25220 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI25430 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI25222 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI104 = {size: 0,kind: 31,base: null,node: null,finalizer: null};
-var NTI25248 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI25246 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI25481 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI25516 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI25252 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI25250 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI140 = {size: 0,kind: 29,base: null,node: null,finalizer: null};
-var NTI130 = {size: 0,kind: 1,base: null,node: null,finalizer: null};
-var NTI3408 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI25216 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI25214 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI25230 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI25228 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NNI25216 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI25216.node = NNI25216;
-var NNI3408 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI3408.node = NNI3408;
-NTI25216.base = NTI3408;
-NTI25214.base = NTI25216;
-NTI25516.base = NTI25228;
-var NNI25252 = {kind: 2, len: 5, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "action", len: 0, typ: NTI140, name: "action", sons: null}, 
-{kind: 1, offset: "encoding", len: 0, typ: NTI140, name: "encoding", sons: null}, 
-{kind: 1, offset: "method", len: 0, typ: NTI140, name: "method", sons: null}, 
-{kind: 1, offset: "target", len: 0, typ: NTI140, name: "target", sons: null}, 
-{kind: 1, offset: "elements", len: 0, typ: NTI25516, name: "elements", sons: null}]};
-NTI25252.node = NNI25252;
-NTI25252.base = NTI25230;
-NTI25250.base = NTI25252;
-var NNI25248 = {kind: 2, len: 5, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "defaultSelected", len: 0, typ: NTI130, name: "defaultSelected", sons: null}, 
-{kind: 1, offset: "selected", len: 0, typ: NTI130, name: "selected", sons: null}, 
-{kind: 1, offset: "selectedIndex", len: 0, typ: NTI104, name: "selectedIndex", sons: null}, 
-{kind: 1, offset: "text", len: 0, typ: NTI140, name: "text", sons: null}, 
-{kind: 1, offset: "value", len: 0, typ: NTI140, name: "value", sons: null}]};
-NTI25248.node = NNI25248;
-NTI25248.base = NTI25230;
-NTI25246.base = NTI25248;
-NTI25481.base = NTI25246;
-var NNI25230 = {kind: 2, len: 11, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "classList", len: 0, typ: NTI25214, name: "classList", sons: null}, 
-{kind: 1, offset: "checked", len: 0, typ: NTI130, name: "checked", sons: null}, 
-{kind: 1, offset: "defaultChecked", len: 0, typ: NTI130, name: "defaultChecked", sons: null}, 
-{kind: 1, offset: "defaultValue", len: 0, typ: NTI140, name: "defaultValue", sons: null}, 
-{kind: 1, offset: "disabled", len: 0, typ: NTI130, name: "disabled", sons: null}, 
-{kind: 1, offset: "form", len: 0, typ: NTI25250, name: "form", sons: null}, 
-{kind: 1, offset: "name", len: 0, typ: NTI140, name: "name", sons: null}, 
-{kind: 1, offset: "readOnly", len: 0, typ: NTI130, name: "readOnly", sons: null}, 
-{kind: 1, offset: "options", len: 0, typ: NTI25481, name: "options", sons: null}, 
-{kind: 1, offset: "clientWidth", len: 0, typ: NTI104, name: "clientWidth", sons: null}, 
-{kind: 1, offset: "clientHeight", len: 0, typ: NTI104, name: "clientHeight", sons: null}]};
-NTI25230.node = NNI25230;
-NTI25220.base = NTI25222;
-NTI25430.base = NTI25220;
-NTI25432.base = NTI25220;
-NTI25434.base = NTI25220;
-var NNI25218 = {kind: 2, offset: 0, typ: null, name: null, len: 12, sons: {"1": {kind: 1, offset: 1, typ: NTI25218, name: "ElementNode", len: 0, sons: null}, 
-"2": {kind: 1, offset: 2, typ: NTI25218, name: "AttributeNode", len: 0, sons: null}, 
-"3": {kind: 1, offset: 3, typ: NTI25218, name: "TextNode", len: 0, sons: null}, 
-"4": {kind: 1, offset: 4, typ: NTI25218, name: "CDATANode", len: 0, sons: null}, 
-"5": {kind: 1, offset: 5, typ: NTI25218, name: "EntityRefNode", len: 0, sons: null}, 
-"6": {kind: 1, offset: 6, typ: NTI25218, name: "EntityNode", len: 0, sons: null}, 
-"7": {kind: 1, offset: 7, typ: NTI25218, name: "ProcessingInstructionNode", len: 0, sons: null}, 
-"8": {kind: 1, offset: 8, typ: NTI25218, name: "CommentNode", len: 0, sons: null}, 
-"9": {kind: 1, offset: 9, typ: NTI25218, name: "DocumentNode", len: 0, sons: null}, 
-"10": {kind: 1, offset: 10, typ: NTI25218, name: "DocumentTypeNode", len: 0, sons: null}, 
-"11": {kind: 1, offset: 11, typ: NTI25218, name: "DocumentFragmentNode", len: 0, sons: null}, 
-"12": {kind: 1, offset: 12, typ: NTI25218, name: "NotationNode", len: 0, sons: null}}};
-NTI25218.node = NNI25218;
-var NNI25260 = {kind: 2, len: 89, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "background", len: 0, typ: NTI140, name: "background", sons: null}, 
-{kind: 1, offset: "backgroundAttachment", len: 0, typ: NTI140, name: "backgroundAttachment", sons: null}, 
-{kind: 1, offset: "backgroundColor", len: 0, typ: NTI140, name: "backgroundColor", sons: null}, 
-{kind: 1, offset: "backgroundImage", len: 0, typ: NTI140, name: "backgroundImage", sons: null}, 
-{kind: 1, offset: "backgroundPosition", len: 0, typ: NTI140, name: "backgroundPosition", sons: null}, 
-{kind: 1, offset: "backgroundRepeat", len: 0, typ: NTI140, name: "backgroundRepeat", sons: null}, 
-{kind: 1, offset: "border", len: 0, typ: NTI140, name: "border", sons: null}, 
-{kind: 1, offset: "borderBottom", len: 0, typ: NTI140, name: "borderBottom", sons: null}, 
-{kind: 1, offset: "borderBottomColor", len: 0, typ: NTI140, name: "borderBottomColor", sons: null}, 
-{kind: 1, offset: "borderBottomStyle", len: 0, typ: NTI140, name: "borderBottomStyle", sons: null}, 
-{kind: 1, offset: "borderBottomWidth", len: 0, typ: NTI140, name: "borderBottomWidth", sons: null}, 
-{kind: 1, offset: "borderColor", len: 0, typ: NTI140, name: "borderColor", sons: null}, 
-{kind: 1, offset: "borderLeft", len: 0, typ: NTI140, name: "borderLeft", sons: null}, 
-{kind: 1, offset: "borderLeftColor", len: 0, typ: NTI140, name: "borderLeftColor", sons: null}, 
-{kind: 1, offset: "borderLeftStyle", len: 0, typ: NTI140, name: "borderLeftStyle", sons: null}, 
-{kind: 1, offset: "borderLeftWidth", len: 0, typ: NTI140, name: "borderLeftWidth", sons: null}, 
-{kind: 1, offset: "borderRight", len: 0, typ: NTI140, name: "borderRight", sons: null}, 
-{kind: 1, offset: "borderRightColor", len: 0, typ: NTI140, name: "borderRightColor", sons: null}, 
-{kind: 1, offset: "borderRightStyle", len: 0, typ: NTI140, name: "borderRightStyle", sons: null}, 
-{kind: 1, offset: "borderRightWidth", len: 0, typ: NTI140, name: "borderRightWidth", sons: null}, 
-{kind: 1, offset: "borderStyle", len: 0, typ: NTI140, name: "borderStyle", sons: null}, 
-{kind: 1, offset: "borderTop", len: 0, typ: NTI140, name: "borderTop", sons: null}, 
-{kind: 1, offset: "borderTopColor", len: 0, typ: NTI140, name: "borderTopColor", sons: null}, 
-{kind: 1, offset: "borderTopStyle", len: 0, typ: NTI140, name: "borderTopStyle", sons: null}, 
-{kind: 1, offset: "borderTopWidth", len: 0, typ: NTI140, name: "borderTopWidth", sons: null}, 
-{kind: 1, offset: "borderWidth", len: 0, typ: NTI140, name: "borderWidth", sons: null}, 
-{kind: 1, offset: "bottom", len: 0, typ: NTI140, name: "bottom", sons: null}, 
-{kind: 1, offset: "captionSide", len: 0, typ: NTI140, name: "captionSide", sons: null}, 
-{kind: 1, offset: "clear", len: 0, typ: NTI140, name: "clear", sons: null}, 
-{kind: 1, offset: "clip", len: 0, typ: NTI140, name: "clip", sons: null}, 
-{kind: 1, offset: "color", len: 0, typ: NTI140, name: "color", sons: null}, 
-{kind: 1, offset: "cursor", len: 0, typ: NTI140, name: "cursor", sons: null}, 
-{kind: 1, offset: "direction", len: 0, typ: NTI140, name: "direction", sons: null}, 
-{kind: 1, offset: "display", len: 0, typ: NTI140, name: "display", sons: null}, 
-{kind: 1, offset: "emptyCells", len: 0, typ: NTI140, name: "emptyCells", sons: null}, 
-{kind: 1, offset: "cssFloat", len: 0, typ: NTI140, name: "cssFloat", sons: null}, 
-{kind: 1, offset: "font", len: 0, typ: NTI140, name: "font", sons: null}, 
-{kind: 1, offset: "fontFamily", len: 0, typ: NTI140, name: "fontFamily", sons: null}, 
-{kind: 1, offset: "fontSize", len: 0, typ: NTI140, name: "fontSize", sons: null}, 
-{kind: 1, offset: "fontStretch", len: 0, typ: NTI140, name: "fontStretch", sons: null}, 
-{kind: 1, offset: "fontStyle", len: 0, typ: NTI140, name: "fontStyle", sons: null}, 
-{kind: 1, offset: "fontVariant", len: 0, typ: NTI140, name: "fontVariant", sons: null}, 
-{kind: 1, offset: "fontWeight", len: 0, typ: NTI140, name: "fontWeight", sons: null}, 
-{kind: 1, offset: "height", len: 0, typ: NTI140, name: "height", sons: null}, 
-{kind: 1, offset: "left", len: 0, typ: NTI140, name: "left", sons: null}, 
-{kind: 1, offset: "letterSpacing", len: 0, typ: NTI140, name: "letterSpacing", sons: null}, 
-{kind: 1, offset: "lineHeight", len: 0, typ: NTI140, name: "lineHeight", sons: null}, 
-{kind: 1, offset: "listStyle", len: 0, typ: NTI140, name: "listStyle", sons: null}, 
-{kind: 1, offset: "listStyleImage", len: 0, typ: NTI140, name: "listStyleImage", sons: null}, 
-{kind: 1, offset: "listStylePosition", len: 0, typ: NTI140, name: "listStylePosition", sons: null}, 
-{kind: 1, offset: "listStyleType", len: 0, typ: NTI140, name: "listStyleType", sons: null}, 
-{kind: 1, offset: "margin", len: 0, typ: NTI140, name: "margin", sons: null}, 
-{kind: 1, offset: "marginBottom", len: 0, typ: NTI140, name: "marginBottom", sons: null}, 
-{kind: 1, offset: "marginLeft", len: 0, typ: NTI140, name: "marginLeft", sons: null}, 
-{kind: 1, offset: "marginRight", len: 0, typ: NTI140, name: "marginRight", sons: null}, 
-{kind: 1, offset: "marginTop", len: 0, typ: NTI140, name: "marginTop", sons: null}, 
-{kind: 1, offset: "maxHeight", len: 0, typ: NTI140, name: "maxHeight", sons: null}, 
-{kind: 1, offset: "maxWidth", len: 0, typ: NTI140, name: "maxWidth", sons: null}, 
-{kind: 1, offset: "minHeight", len: 0, typ: NTI140, name: "minHeight", sons: null}, 
-{kind: 1, offset: "minWidth", len: 0, typ: NTI140, name: "minWidth", sons: null}, 
-{kind: 1, offset: "overflow", len: 0, typ: NTI140, name: "overflow", sons: null}, 
-{kind: 1, offset: "padding", len: 0, typ: NTI140, name: "padding", sons: null}, 
-{kind: 1, offset: "paddingBottom", len: 0, typ: NTI140, name: "paddingBottom", sons: null}, 
-{kind: 1, offset: "paddingLeft", len: 0, typ: NTI140, name: "paddingLeft", sons: null}, 
-{kind: 1, offset: "paddingRight", len: 0, typ: NTI140, name: "paddingRight", sons: null}, 
-{kind: 1, offset: "paddingTop", len: 0, typ: NTI140, name: "paddingTop", sons: null}, 
-{kind: 1, offset: "pageBreakAfter", len: 0, typ: NTI140, name: "pageBreakAfter", sons: null}, 
-{kind: 1, offset: "pageBreakBefore", len: 0, typ: NTI140, name: "pageBreakBefore", sons: null}, 
-{kind: 1, offset: "position", len: 0, typ: NTI140, name: "position", sons: null}, 
-{kind: 1, offset: "right", len: 0, typ: NTI140, name: "right", sons: null}, 
-{kind: 1, offset: "scrollbar3dLightColor", len: 0, typ: NTI140, name: "scrollbar3dLightColor", sons: null}, 
-{kind: 1, offset: "scrollbarArrowColor", len: 0, typ: NTI140, name: "scrollbarArrowColor", sons: null}, 
-{kind: 1, offset: "scrollbarBaseColor", len: 0, typ: NTI140, name: "scrollbarBaseColor", sons: null}, 
-{kind: 1, offset: "scrollbarDarkshadowColor", len: 0, typ: NTI140, name: "scrollbarDarkshadowColor", sons: null}, 
-{kind: 1, offset: "scrollbarFaceColor", len: 0, typ: NTI140, name: "scrollbarFaceColor", sons: null}, 
-{kind: 1, offset: "scrollbarHighlightColor", len: 0, typ: NTI140, name: "scrollbarHighlightColor", sons: null}, 
-{kind: 1, offset: "scrollbarShadowColor", len: 0, typ: NTI140, name: "scrollbarShadowColor", sons: null}, 
-{kind: 1, offset: "scrollbarTrackColor", len: 0, typ: NTI140, name: "scrollbarTrackColor", sons: null}, 
-{kind: 1, offset: "tableLayout", len: 0, typ: NTI140, name: "tableLayout", sons: null}, 
-{kind: 1, offset: "textAlign", len: 0, typ: NTI140, name: "textAlign", sons: null}, 
-{kind: 1, offset: "textDecoration", len: 0, typ: NTI140, name: "textDecoration", sons: null}, 
-{kind: 1, offset: "textIndent", len: 0, typ: NTI140, name: "textIndent", sons: null}, 
-{kind: 1, offset: "textTransform", len: 0, typ: NTI140, name: "textTransform", sons: null}, 
-{kind: 1, offset: "top", len: 0, typ: NTI140, name: "top", sons: null}, 
-{kind: 1, offset: "verticalAlign", len: 0, typ: NTI140, name: "verticalAlign", sons: null}, 
-{kind: 1, offset: "visibility", len: 0, typ: NTI140, name: "visibility", sons: null}, 
-{kind: 1, offset: "width", len: 0, typ: NTI140, name: "width", sons: null}, 
-{kind: 1, offset: "wordSpacing", len: 0, typ: NTI140, name: "wordSpacing", sons: null}, 
-{kind: 1, offset: "zIndex", len: 0, typ: NTI104, name: "zIndex", sons: null}]};
-NTI25260.node = NNI25260;
-NTI25260.base = NTI3408;
-NTI25258.base = NTI25260;
-var NNI25222 = {kind: 2, len: 14, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "attributes", len: 0, typ: NTI25430, name: "attributes", sons: null}, 
-{kind: 1, offset: "childNodes", len: 0, typ: NTI25432, name: "childNodes", sons: null}, 
-{kind: 1, offset: "children", len: 0, typ: NTI25434, name: "children", sons: null}, 
-{kind: 1, offset: "data", len: 0, typ: NTI140, name: "data", sons: null}, 
-{kind: 1, offset: "firstChild", len: 0, typ: NTI25220, name: "firstChild", sons: null}, 
-{kind: 1, offset: "lastChild", len: 0, typ: NTI25220, name: "lastChild", sons: null}, 
-{kind: 1, offset: "nextSibling", len: 0, typ: NTI25220, name: "nextSibling", sons: null}, 
-{kind: 1, offset: "nodeName", len: 0, typ: NTI140, name: "nodeName", sons: null}, 
-{kind: 1, offset: "nodeType", len: 0, typ: NTI25218, name: "nodeType", sons: null}, 
-{kind: 1, offset: "nodeValue", len: 0, typ: NTI140, name: "nodeValue", sons: null}, 
-{kind: 1, offset: "parentNode", len: 0, typ: NTI25220, name: "parentNode", sons: null}, 
-{kind: 1, offset: "previousSibling", len: 0, typ: NTI25220, name: "previousSibling", sons: null}, 
-{kind: 1, offset: "innerHTML", len: 0, typ: NTI140, name: "innerHTML", sons: null}, 
-{kind: 1, offset: "style", len: 0, typ: NTI25258, name: "style", sons: null}]};
-NTI25222.node = NNI25222;
-var NNI25204 = {kind: 2, len: 20, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "onabort", len: 0, typ: NTI25309, name: "onabort", sons: null}, 
-{kind: 1, offset: "onblur", len: 0, typ: NTI25313, name: "onblur", sons: null}, 
-{kind: 1, offset: "onchange", len: 0, typ: NTI25317, name: "onchange", sons: null}, 
-{kind: 1, offset: "onclick", len: 0, typ: NTI25321, name: "onclick", sons: null}, 
-{kind: 1, offset: "ondblclick", len: 0, typ: NTI25325, name: "ondblclick", sons: null}, 
-{kind: 1, offset: "onerror", len: 0, typ: NTI25329, name: "onerror", sons: null}, 
-{kind: 1, offset: "onfocus", len: 0, typ: NTI25333, name: "onfocus", sons: null}, 
-{kind: 1, offset: "onkeydown", len: 0, typ: NTI25337, name: "onkeydown", sons: null}, 
-{kind: 1, offset: "onkeypress", len: 0, typ: NTI25341, name: "onkeypress", sons: null}, 
-{kind: 1, offset: "onkeyup", len: 0, typ: NTI25345, name: "onkeyup", sons: null}, 
-{kind: 1, offset: "onload", len: 0, typ: NTI25349, name: "onload", sons: null}, 
-{kind: 1, offset: "onmousedown", len: 0, typ: NTI25353, name: "onmousedown", sons: null}, 
-{kind: 1, offset: "onmousemove", len: 0, typ: NTI25357, name: "onmousemove", sons: null}, 
-{kind: 1, offset: "onmouseout", len: 0, typ: NTI25361, name: "onmouseout", sons: null}, 
-{kind: 1, offset: "onmouseover", len: 0, typ: NTI25365, name: "onmouseover", sons: null}, 
-{kind: 1, offset: "onmouseup", len: 0, typ: NTI25369, name: "onmouseup", sons: null}, 
-{kind: 1, offset: "onreset", len: 0, typ: NTI25373, name: "onreset", sons: null}, 
-{kind: 1, offset: "onselect", len: 0, typ: NTI25377, name: "onselect", sons: null}, 
-{kind: 1, offset: "onsubmit", len: 0, typ: NTI25381, name: "onsubmit", sons: null}, 
-{kind: 1, offset: "onunload", len: 0, typ: NTI25385, name: "onunload", sons: null}]};
-NTI25204.node = NNI25204;
-NTI25204.base = NTI3408;
-NTI25222.base = NTI25204;
-NTI25230.base = NTI25222;
-NTI25228.base = NTI25230;
-NTI44244.base = NTI25228;
 
-function arrayConstr(len_20264, value_20265, typ_20266) {
-		      var result = new Array(len_20264);
-      for (var i = 0; i < len_20264; ++i) result[i] = nimCopy(null, value_20265, typ_20266);
-      return result;
-    
+function cstrToNimstr(c_14803) {
+		  var ln = c_14803.length;
+  var result = new Array(ln);
+  var r = 0;
+  for (var i = 0; i < ln; ++i) {
+    var ch = c_14803.charCodeAt(i);
+
+    if (ch < 128) {
+      result[r] = ch;
+    }
+    else {
+      if (ch < 2048) {
+        result[r] = (ch >> 6) | 192;
+      }
+      else {
+        if (ch < 55296 || ch >= 57344) {
+          result[r] = (ch >> 12) | 224;
+        }
+        else {
+            ++i;
+            ch = 65536 + (((ch & 1023) << 10) | (c_14803.charCodeAt(i) & 1023));
+            result[r] = (ch >> 18) | 240;
+            ++r;
+            result[r] = ((ch >> 12) & 63) | 128;
+        }
+        ++r;
+        result[r] = ((ch >> 6) & 63) | 128;
+      }
+      ++r;
+      result[r] = (ch & 63) | 128;
+    }
+    ++r;
+  }
+  result[r] = 0; // terminating zero
+  return result;
+  
 
 	
 }
@@ -350,46 +151,6 @@ function nimCopy(dest_19817, src_19818, ti_19819) {
 
 }
 
-function cstrToNimstr(c_14803) {
-		  var ln = c_14803.length;
-  var result = new Array(ln);
-  var r = 0;
-  for (var i = 0; i < ln; ++i) {
-    var ch = c_14803.charCodeAt(i);
-
-    if (ch < 128) {
-      result[r] = ch;
-    }
-    else {
-      if (ch < 2048) {
-        result[r] = (ch >> 6) | 192;
-      }
-      else {
-        if (ch < 55296 || ch >= 57344) {
-          result[r] = (ch >> 12) | 224;
-        }
-        else {
-            ++i;
-            ch = 65536 + (((ch & 1023) << 10) | (c_14803.charCodeAt(i) & 1023));
-            result[r] = (ch >> 18) | 240;
-            ++r;
-            result[r] = ((ch >> 12) & 63) | 128;
-        }
-        ++r;
-        result[r] = ((ch >> 6) & 63) | 128;
-      }
-      ++r;
-      result[r] = (ch & 63) | 128;
-    }
-    ++r;
-  }
-  result[r] = 0; // terminating zero
-  return result;
-  
-
-	
-}
-
 function makeNimstrLit(c_14603) {
 		    var ln = c_14603.length;
     var result = new Array(ln + 1);
@@ -442,6 +203,15 @@ var globalRaiseHook_11605 = [null];
 var localRaiseHook_11610 = [null];
 var outOfMemHook_11613 = [null];
 
+function degToRad_44075(d_44079) {
+	var result_44080 = 0.0;
+
+		result_44080 = (d_44079 * 1.7453292519943295e-002);
+
+	return result_44080;
+
+}
+
 function isFatPointer_19801(ti_19803) {
 	var result_19804 = false;
 
@@ -490,15 +260,6 @@ function nimCopyAux(dest_19822, src_19823, n_19825) {
 	
 }
 
-function degToRad_44416(d_44420) {
-	var result_44421 = 0.0;
-
-		result_44421 = (d_44420 * 1.7453292519943295e-002);
-
-	return result_44421;
-
-}
-
 function nsuIntToStr(x_38644, minchars_38645) {
 	var result_38646 = null;
 
@@ -526,68 +287,66 @@ function nsuIntToStr(x_38644, minchars_38645) {
 
 }
 
-function init_44234() {
-	var result_44238 = arrayConstr(360, null, NTI25228);
-
-	BeforeRet: do {
-		var bars_44245 = arrayConstr(360, null, NTI25228);
+function init_44057(n_44059) {
 		L1: do {
-			var i_44414 = 0;
-			var res_44430 = 0;
+			var i_44073 = 0;
+			var colontmp__44087 = 0;
+			colontmp__44087 = (n_44059 - 1);
+			var res_44090 = 0;
 			L2: do {
 					L3: while (true) {
-					if (!(res_44430 <= 359)) break L3;
-						i_44414 = res_44430;
-						var width_44423 = Math.floor(((1.0000000000000000e+002 * Math.sin(degToRad_44416(i_44414))) + 1.0000000000000000e+002));
-						bars_44245[i_44414] = document.createElement("div");
-						bars_44245[i_44414].style.height = toJSStr((nsuIntToStr(1, 1).slice(0,-1)).concat(makeNimstrLit("px")));
-						bars_44245[i_44414].style.width = toJSStr((nsuIntToStr(width_44423, 1).slice(0,-1)).concat(makeNimstrLit("px")));
-						bars_44245[i_44414].style.backgroundColor = "#302833";
-						document.getElementById("sin-curve").appendChild(bars_44245[i_44414]);
-						res_44430 += 1;
+					if (!(res_44090 <= colontmp__44087)) break L3;
+						i_44073 = res_44090;
+						var width_44082 = Math.floor(((1.0000000000000000e+002 * Math.sin(degToRad_44075(i_44073))) + 1.0000000000000000e+002));
+						var bar_44083 = document.createElement("div");
+						bar_44083.classList.add("bar");
+						bar_44083.style.height = toJSStr((nsuIntToStr(1, 1).slice(0,-1)).concat(makeNimstrLit("px")));
+						bar_44083.style.width = toJSStr((nsuIntToStr(width_44082, 1).slice(0,-1)).concat(makeNimstrLit("px")));
+						bar_44083.style.backgroundColor = "#302833";
+						document.getElementById("sin-curve").appendChild(bar_44083);
+						res_44090 += 1;
 					}
 			} while(false);
 		} while(false);
-		nimCopy(result_44238, bars_44245, NTI44244);
-		break BeforeRet;
-	} while (false);
-
-	return result_44238;
-
-}
-
-function run_44005(bars_44009) {
-		var firstWidth_44019 = bars_44009[0].style.width;
-		L1: do {
-			var i_44215 = 0;
-			var res_44229 = 0;
-			L2: do {
-					L3: while (true) {
-					if (!(res_44229 <= 358)) break L3;
-						i_44215 = res_44229;
-						bars_44009[i_44215].style.width = bars_44009[(i_44215 + 1)].style.width;
-						res_44229 += 1;
-					}
-			} while(false);
-		} while(false);
-		bars_44009[359].style.width = firstWidth_44019;
 
 	
 }
 
-function stopTimer_44433(timer_44436) {
-		if (!((timer_44436 == null))) {
-		window.clearInterval(timer_44436);
+function run_44002() {
+		var bars_44005 = document.getElementsByClassName("bar");
+		var firstWidth_44013 = bars_44005[0].style.width;
+		L1: do {
+			var i_44038 = 0;
+			var colontmp__44050 = 0;
+			colontmp__44050 = ((bars_44005 != null ? (bars_44005.length-1) : -1) - 1);
+			var res_44053 = 0;
+			L2: do {
+					L3: while (true) {
+					if (!(res_44053 <= colontmp__44050)) break L3;
+						i_44038 = res_44053;
+						bars_44005[i_44038].style.width = bars_44005[(i_44038 + 1)].style.width;
+						res_44053 += 1;
+					}
+			} while(false);
+		} while(false);
+		bars_44005[(bars_44005 != null ? (bars_44005.length-1) : -1)].style.width = firstWidth_44013;
+
+	
+}
+
+function stopTimer_44094(timer_44097) {
+		if (!((timer_44097 == null))) {
+		window.clearInterval(timer_44097);
 		}
 		
 
 	
 }
 
-function toggleKey_44448(keyCode_44450, timer_44452) {
-		switch (keyCode_44450) {
+function toggleKey_44109(keyCode_44111, timer_44113) {
+		switch (keyCode_44111) {
 		case 83:
-			stopTimer_44433(timer_44452);
+			stopTimer_44094(timer_44113);
 			break;
 		default: 
 			break;
@@ -596,24 +355,24 @@ function toggleKey_44448(keyCode_44450, timer_44452) {
 	
 }
 
-function main_44455() {
+function main_44116() {
 
-		function colonanonymous__44461() {
-				run_44005(bars_44459);
-
-			
-		}
-
-		function colonanonymous__44464(e_44466) {
-				toggleKey_44448(e_44466.keyCode, timer_44463);
+		function colonanonymous__44121() {
+				run_44002();
 
 			
 		}
 
-		var bars_44459 = init_44234();
-		var timer_44463 = window.setInterval(colonanonymous__44461, 16);
-		window.addEventListener("keydown", colonanonymous__44464, false);
+		function colonanonymous__44124(e_44126) {
+				toggleKey_44109(e_44126.keyCode, timer_44123);
+
+			
+		}
+
+		init_44057(360);
+		var timer_44123 = window.setInterval(colonanonymous__44121, 16);
+		window.addEventListener("keydown", colonanonymous__44124, false);
 
 	
 }
-main_44455();
+main_44116();
