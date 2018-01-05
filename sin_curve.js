@@ -203,12 +203,12 @@ var globalRaiseHook_11605 = [null];
 var localRaiseHook_11610 = [null];
 var outOfMemHook_11613 = [null];
 
-function degToRad_44074(d_44078) {
-	var result_44079 = 0.0;
+function degToRad_44072(d_44076) {
+	var result_44077 = 0.0;
 
-		result_44079 = (d_44078 * 1.7453292519943295e-002);
+		result_44077 = (d_44076 * 1.7453292519943295e-002);
 
-	return result_44079;
+	return result_44077;
 
 }
 
@@ -287,24 +287,22 @@ function nsuIntToStr(x_38644, minchars_38645) {
 
 }
 
-function init_44056(n_44058) {
+function init_44054(n_44056) {
 		L1: do {
-			var i_44072 = 0;
-			var colontmp__44086 = 0;
-			colontmp__44086 = (n_44058 - 1);
-			var res_44089 = 0;
+			var i_44070 = 0;
+			var i_44086 = 0;
 			L2: do {
 					L3: while (true) {
-					if (!(res_44089 <= colontmp__44086)) break L3;
-						i_44072 = res_44089;
-						var width_44081 = Math.floor(((1.0000000000000000e+002 * Math.sin(degToRad_44074(i_44072))) + 1.0000000000000000e+002));
-						var bar_44082 = document.createElement("div");
-						bar_44082.classList.add("bar");
-						bar_44082.style.height = toJSStr((nsuIntToStr(1, 1).slice(0,-1)).concat(makeNimstrLit("px")));
-						bar_44082.style.width = toJSStr((nsuIntToStr(width_44081, 1).slice(0,-1)).concat(makeNimstrLit("px")));
-						bar_44082.style.backgroundColor = "#302833";
-						document.getElementById("sin-curve").appendChild(bar_44082);
-						res_44089 += 1;
+					if (!(i_44086 < n_44056)) break L3;
+						i_44070 = i_44086;
+						var width_44079 = Math.floor(((1.0000000000000000e+002 * Math.sin(degToRad_44072(i_44070))) + 1.0000000000000000e+002));
+						var bar_44080 = document.createElement("div");
+						bar_44080.classList.add("bar");
+						bar_44080.style.height = toJSStr((nsuIntToStr(1, 1).slice(0,-1)).concat(makeNimstrLit("px")));
+						bar_44080.style.width = toJSStr((nsuIntToStr(width_44079, 1).slice(0,-1)).concat(makeNimstrLit("px")));
+						bar_44080.style.backgroundColor = "#302833";
+						document.getElementById("sin-curve").appendChild(bar_44080);
+						i_44086 += 1;
 					}
 			} while(false);
 		} while(false);
@@ -318,14 +316,14 @@ function run_44001() {
 		L1: do {
 			var i_44037 = 0;
 			var colontmp__44049 = 0;
-			colontmp__44049 = ((bars_44004 != null ? (bars_44004.length-1) : -1) - 1);
-			var res_44052 = 0;
+			colontmp__44049 = (bars_44004 != null ? (bars_44004.length-1) : -1);
+			var i_44052 = 0;
 			L2: do {
 					L3: while (true) {
-					if (!(res_44052 <= colontmp__44049)) break L3;
-						i_44037 = res_44052;
+					if (!(i_44052 < colontmp__44049)) break L3;
+						i_44037 = i_44052;
 						bars_44004[i_44037].style.width = bars_44004[(i_44037 + 1)].style.width;
-						res_44052 += 1;
+						i_44052 += 1;
 					}
 			} while(false);
 		} while(false);
@@ -334,19 +332,19 @@ function run_44001() {
 	
 }
 
-function stopTimer_44093(timer_44096) {
-		if (!((timer_44096 == null))) {
-		window.clearInterval(timer_44096);
+function stopTimer_44088(timer_44091) {
+		if (!((timer_44091 == null))) {
+		window.clearInterval(timer_44091);
 		}
 		
 
 	
 }
 
-function toggleKey_44108(keyCode_44110, timer_44112) {
-		switch (keyCode_44110) {
+function toggleKey_44103(keyCode_44105, timer_44107) {
+		switch (keyCode_44105) {
 		case 83:
-			stopTimer_44093(timer_44112);
+			stopTimer_44088(timer_44107);
 			break;
 		default: 
 			break;
@@ -355,24 +353,24 @@ function toggleKey_44108(keyCode_44110, timer_44112) {
 	
 }
 
-function main_44115() {
+function main_44109() {
 
-		function colonanonymous__44121() {
+		function colonanonymous__44115() {
 				run_44001();
 
 			
 		}
 
-		function colonanonymous__44124(e_44126) {
-				toggleKey_44108(e_44126.keyCode, timer_44123);
+		function colonanonymous__44118(e_44120) {
+				toggleKey_44103(e_44120.keyCode, timer_44117);
 
 			
 		}
 
-		init_44056(360);
-		var timer_44123 = window.setInterval(colonanonymous__44121, 16);
-		window.addEventListener("keydown", colonanonymous__44124, false);
+		init_44054(360);
+		var timer_44117 = window.setInterval(colonanonymous__44115, 16);
+		window.addEventListener("keydown", colonanonymous__44118, false);
 
 	
 }
-main_44115();
+main_44109();
