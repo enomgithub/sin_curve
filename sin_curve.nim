@@ -1,15 +1,16 @@
 import dom
-from math import sin, degToRad
-from strutils import intToStr
+import math
 
 
 proc run() =
   let
     bars: seq[Element] = document.getElementsByClassName("bar")
-    firstWidth: cstring = bars[low(bars)].style.width
-  for i in low(bars)..<high(bars):
+    first: int = bars.low
+    last: int = bars.high
+    firstWidth: cstring = bars[first].style.width
+  for i in first..<last:
     bars[i].style.width = bars[i + 1].style.width
-  bars[high(bars)].style.width = firstWidth
+  bars[last].style.width = firstWidth
 
 
 proc init(n: int) =
@@ -23,13 +24,13 @@ proc init(n: int) =
       width: int = (amplitude * sin((i.toFloat).degToRad) + amplitude).toInt
       bar: Element = document.createElement("div")
     bar.classList.add("bar")
-    bar.style.height = height.intToStr & "px"
-    bar.style.width = width.intToStr & "px"
+    bar.style.height = $height & "px"
+    bar.style.width = $width & "px"
     bar.style.backgroundColor = color
     document.getElementById(id).appendChild(bar)
 
 
-proc stopTimer(timer: ref TInterval) =
+proc stop(timer: ref TInterval) =
   if timer != nil:
     window.clearInterval(timer)
 
@@ -37,7 +38,7 @@ proc stopTimer(timer: ref TInterval) =
 proc toggleKey(keyCode: int, timer: ref TInterval) =
   const sKey: int8 = int8('S')  # = 83'i8
   case keyCode
-  of sKey: stopTimer(timer)
+  of sKey: timer.stop
   else: discard
 
 
@@ -47,10 +48,8 @@ proc main() =
     N: int = 360
   init(N)
   var timer: ref TInterval = window.setInterval(proc() = run(), MS)
-  window.addEventListener( "keydown"
-                         , proc(e: Event) = toggleKey(e.keyCode, timer)
-                         , false
-                         )
+  window.addEventListener("keydown",
+                          proc(e: Event) = toggleKey(e.keyCode, timer), false)
 
 
 when isMainModule:
